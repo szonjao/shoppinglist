@@ -1,0 +1,149 @@
+html, body {
+	height: 100%;
+}
+body {
+	font-family: "Anonymous Pro", sans-serif;
+	color: black;
+	text-align: center;
+}
+
+body {
+       margin: 0px;
+       padding: 0px;
+ }
+ 
+
+div#wrapper {
+       width: 100%;
+       min-height: 100%;
+       height: 100%;
+       position: relative;
+       margin: 0px 0px -1.5em 0px;
+       overflow: scroll;
+ }
+ 
+
+div#footer_wrapper {
+       width: 100%;
+       height: 1.5em;
+ }
+ 
+
+div#content_wrapper {
+       width: 100%;
+       padding: 0px 0px 1.5em 0px;
+ }
+ 
+
+div#footer_wrapper, div#content_wrapper {
+       min-width: 75%;
+ }
+ 
+
+div#footer_inner_wrapper, div#content_inner_wrapper {
+       width: 75%;
+       margin: 0px auto;
+ }
+
+.header {
+	border-bottom: solid #709F4A 0.1rem;
+}
+
+h1 {
+	font-size: 3rem;
+	color: #4B3F72;
+}
+
+p, label {
+	font-size: 0.8rem;
+	color: #4B3F72;
+	vertical-align: middle;
+	margin-top: 0.2em;
+}
+
+label {
+	padding-left: 0.5em;
+}
+
+.additem {
+	margin-top: 1rem;
+	margin: 1em auto;
+	display: flex;
+	justify-content: center;
+	min-width: 9em;
+	max-width: 90%;
+	min-width: 12em;
+	border: 0.1em;
+
+}
+button {
+	color: #709F4A;
+	border: solid 0.1em;
+	border-color: #709F4A;
+	background-color: white;
+	min-height: 2em;
+	min-width: 2em;
+	padding: 0.2em;
+}
+
+button:focus {
+	border-color: #4A6831;
+}
+
+input[type=text] {
+	height: 2em;
+	min-width: 6em;
+	border: solid 0.1em;
+	border-color: #709F4A;
+	padding: 0.2em;
+	margin-left: 0.5em;
+}
+
+input[type=text]:focus {
+	border-color: #4A6831;
+	outline: none;
+	height: 90%;
+	float: left;
+}
+
+.listelements {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 0 auto;
+	flex-grow: 1;
+	min-width: 12em;
+	max-width: 90%;
+	border: solid 0.1em #4B3F72;
+}
+.rectangle {
+	min-width: 9em;
+	max-width: 90%;
+	height: 2em;
+	background-color: #FAD3A5;
+	border: solid 0.1em #FAD3A5; 
+	padding: 0.5em;
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+
+.rectangle > img {
+	max-height: 90%;
+	float: right;
+	margin: auto;
+}
+
+input[type=checkbox] {
+	height: 90%;
+	float: left;
+}
+
+
+.footer {
+	background-color: #709F4A;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
