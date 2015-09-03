@@ -59,6 +59,7 @@ p, label {
 	color: #4B3F72;
 	vertical-align: middle;
 	margin-top: 0.2em;
+	line-height: 2.5em;
 }
 
 label {
@@ -100,9 +101,9 @@ input[type=text] {
 }
 
 input[type=text]:focus {
-	border-color: #4A6831;
+	border: solid 0.1em #4B3F72;
 	outline: none;
-	height: 90%;
+	height: 2em;
 	float: left;
 }
 
@@ -115,6 +116,7 @@ input[type=text]:focus {
 	min-width: 12em;
 	max-width: 90%;
 	border: solid 0.1em #4B3F72;
+	min-height: 3em;
 }
 .rectangle {
 	min-width: 9em;
@@ -134,11 +136,17 @@ input[type=text]:focus {
 	margin: auto;
 }
 
-input[type=checkbox] {
-	height: 90%;
+.checkbox {
+	line-height: 2.5em;
 	float: left;
+	border-radius: 1em;
+	cursor: pointer;
 }
 
+
+.remove {
+	line-height: 1em;
+}
 
 .footer {
 	background-color: #709F4A;
