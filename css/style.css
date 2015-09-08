@@ -129,6 +129,11 @@ input[type=text]:focus {
 	margin-bottom: 0.5em;
 }
 
+.selected {
+	border: solid 0.1em #F6921E; 
+	background-color: #F6921E;
+}
+
 
 .rectangle > img {
 	max-height: 90%;
