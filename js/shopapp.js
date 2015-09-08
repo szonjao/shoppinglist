@@ -6,12 +6,21 @@ function setDraggable(obj) {
 } 
 
 function addItem(listitem) {
-	$(".listelements").prepend('<div class="rectangle"><input type="checkbox" class="checkbox"><label>'+listitem+'</label><img class="remove" src="./css/images/trash.svg"></div>');
+	var index = $(".listelements").children().length + 1;
+	var element = 	'<div class="rectangle"><div class="roundedTwo"><input type="checkbox" value="None" id="roundedTwo#'+index+'" name="check" /><label for="roundedTwo#'+index+'"></label>'+
+    				'</div><label class="item">' + listitem + '</label><img class="remove" src="./css/images/trash.svg">' +
+					'</div>';
+	$(".listelements").prepend(element);
 	$("#add").val("");
 	setDraggable($(".rectangle"));
 };
 
 $(document).ready(function() {
+	$(".roundedTwo").on("click", function() {
+		var chb = $(this).closest("checkbox");
+		chb.trigger("click");
+	});
+
 	$("button").on("click", function(){
 		$("#add").focus();
 		addItem($("#add").val());
@@ -35,7 +44,7 @@ $(document).ready(function() {
     $(this).closest('.rectangle').remove();
   });
 
- $('.listelements').on('click', '.checkbox', function(e) {
+ $('.listelements').on('click', 'input[type=checkbox]', function(e) {
     var item=$(this).closest('.rectangle');
     if (event.target.checked) {
     	$(".listelements").append(item);
