@@ -27,8 +27,7 @@ $(document).ready(function() {
 	$("#add").on("keydown", function(e) {
 		if (e.which === 13) {
 			addItem($("#add").val());
-		} else {
-
+		} 
 		};
 	});
 
