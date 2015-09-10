@@ -6,10 +6,8 @@ function setDraggable(obj) {
 } 
 
 function addItem(listitem) {
-	var index = $(".listelements").children().length + 1;
-	var element = 	'<div class="rectangle"><div class="roundedTwo"><input type="checkbox" value="None" id="roundedTwo#'+index+'" name="check" /><label for="roundedTwo#'+index+'"></label>'+
-    				'</div><label class="item">' + listitem + '</label><img class="remove" src="./css/images/trash.svg">' +
-					'</div>';
+	var index=$(".listelements").children().length + 1;
+	var element='<div class="rectangle"><div class="roundedTwo"><input type="checkbox" value="None" id="roundedTwo#'+index+'" name="check" /><label for="roundedTwo#'+index+'"></label>'+'</div><label class="item">' + listitem + '</label><img class="remove" src="./css/images/trash.svg">' +'</div>';
 	$(".listelements").prepend(element);
 	$("#add").val("");
 	setDraggable($(".rectangle"));
@@ -17,7 +15,7 @@ function addItem(listitem) {
 
 $(document).ready(function() {
 	$(".roundedTwo").on("click", function() {
-		var chb = $(this).closest("checkbox");
+		var chb=$(this).closest("checkbox");
 		chb.trigger("click");
 	});
 
@@ -29,8 +27,7 @@ $(document).ready(function() {
 	$("#add").on("keydown", function(e) {
 		if (e.which === 13) {
 			addItem($("#add").val());
-		} else {
-
+		} 
 		};
 	});
 
