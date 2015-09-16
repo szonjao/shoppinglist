@@ -28,7 +28,6 @@ $(document).ready(function() {
 		if (e.which === 13) {
 			addItem($("#add").val());
 		}
-		};
 	});
 
 	$(".listelements").sortable({
